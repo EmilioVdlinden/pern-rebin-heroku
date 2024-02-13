@@ -45,7 +45,7 @@ const Register = ({setIsAuthenticated}) => {
             <label htmlFor="password" className='block mb-2 text-base'>Password</label>
             <input type='password' required name='password' autoComplete='off' className='block px-2 py-4 mb-10 w-full rebin-password rounded-lg border-rebin' value={inputs.password} onChange={handleChange}/>
             <button className='block rounded-lg px-2 py-4 mb-10 w-full bg-rebin-blue text-white bg-rebin-hover'>Create account</button>
-            <span className='block text-center text-base font-light text-rebin-darkgrey'>You have an account? <Link to='/login' className='text-rebin-blue hover:font-medium'>Login now</Link></span>
+            <span className='block text-center text-base font-light text-rebin-darkgrey'>You have an account? <Link to='/' className='text-rebin-blue hover:font-medium'>Login now</Link></span>
           </form>
         </div>
       </div>

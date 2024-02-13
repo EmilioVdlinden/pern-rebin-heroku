@@ -47,7 +47,7 @@ const ResetPassword = () => {
                 You can now use your new password to log in to your account.
               </h3>
             </div>
-            <Link to='/login' className='block rounded-lg px-2 py-4 mb-10 w-full bg-rebin-blue text-center text-white bg-rebin-hover'>Log in</Link>
+            <Link to='/' className='block rounded-lg px-2 py-4 mb-10 w-full bg-rebin-blue text-center text-white bg-rebin-hover'>Log in</Link>
           </div>
         </div> 
       ) : (

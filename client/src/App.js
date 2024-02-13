@@ -33,9 +33,9 @@ function App() {
   return (
     <Router> 
       <Routes>
-        <Route path="/login" element={isAuthenticated ? <Navigate to='/dashboard' /> : <Login setIsAuthenticated={setIsAuthenticated}/>} />
-        <Route path="/register" element={isAuthenticated ? <Navigate to='/login' /> : <Register setIsAuthenticated={setIsAuthenticated} />} />
-        <Route path="/dashboard" element={isAuthenticated ? <Dashboard setIsAuthenticated={setIsAuthenticated}/> : <Navigate to='/login'/>}/>
+        <Route path="/" element={isAuthenticated ? <Navigate to='/dashboard' /> : <Login setIsAuthenticated={setIsAuthenticated}/>} />
+        <Route path="/register" element={isAuthenticated ? <Navigate to='/' /> : <Register setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/dashboard" element={isAuthenticated ? <Dashboard setIsAuthenticated={setIsAuthenticated}/> : <Navigate to='/'/>}/>
         <Route path="/password" element={<ForgotPassword/>}/>
         <Route path="/password/reset/:user_id/:token" element={<ResetPassword/>}/>
       </Routes>

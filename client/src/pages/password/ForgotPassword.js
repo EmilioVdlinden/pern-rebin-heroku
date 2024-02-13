@@ -62,7 +62,7 @@ const ForgotPassword = () => {
               <button className='block rounded-lg px-2 py-4 mb-10 w-full bg-rebin-blue text-white bg-rebin-hover'>Continue</button>
               <div className='flex items-center justify-center gap-x-1 mr-2'>
                 <IoIosArrowRoundBack className='text-3xl text-rebin-blue hover:font-medium'/>
-                <Link to='/login' className='text-center text-rebin-blue hover:font-medium'>Back to login</Link>
+                <Link to='/' className='text-center text-rebin-blue hover:font-medium'>Back to login</Link>
               </div>
             </form>
           </div>
