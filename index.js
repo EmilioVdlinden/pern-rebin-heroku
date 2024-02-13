@@ -27,6 +27,10 @@ app.use("/statistics", require("./routes/statistics"));
 
 app.use("/password", require("./routes/password"));
 
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
+});
+
  //Listen server
 const port = process.env.PORT || 5000;
 

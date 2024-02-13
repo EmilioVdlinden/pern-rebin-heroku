@@ -70,6 +70,6 @@ INSERT INTO bins(bin_latitude, bin_longitude, bin_adress, customer_id, bin_type_
 INSERT INTO users(user_name, user_email, user_password, customer_id) VALUES ('Nathalie', 'nathalie.deschampheleire@ateljeevzw.be', '$2b$10$9YOvHWPjVnxjRrISH5r5D.OcT8DRwB.vBADqHVUHPARhkSs7.9UsG', '96a29102-7785-416e-a865-f1e6169df313');
 
 -- Generate sensor
-INSERT INTO sensors(sensor_credential, bin_id) VALUES ('C564D2', 'ab7fb1dd-ffa3-4489-a31c-11870d949c81');
+INSERT INTO sensors(sensor_credential, bin_id) VALUES ('C3A3E9', 'da528553-e413-4967-91b7-3bdfc6db51af');
 
 
