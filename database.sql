@@ -40,7 +40,8 @@ CREATE TABLE sensors(
   sensor_battery_level SMALLINT,
   sensor_fill_level SMALLINT,
   sensor_temperature SMALLINT,
-  sensor_full BOOLEAN NOT NULL DEFAULT false,
+  sensor_full VARCHAR(255),
+  sensor_last_seen TIMESTAMP,
   sensor_low_battery BOOLEAN NOT NULL DEFAULT false,
   bin_id UUID NOT NULL REFERENCES bins(bin_id)
 );
