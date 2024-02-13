@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html * {
+  font-family: 'Poppins', sans-serif;;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.bg-rebin-light-blue {
+  background-color: #F2F5FD;
+}
+
+.bg-rebin-blue {
+  background-color: #0043ff;
+}
+
+.bg-rebin-dark-blue {
+  background-color: #12274F;
+}
+
+.bg-rebin-grey {
+  background-color: #A0AEC0;
+}
+
+.bg-rebin-red {
+  background-color: rgba(216, 0, 39, 0.05);
+}
+
+.bg-rebin-green {
+  background-color: rgba(79, 209, 197, 0.08);
+}
+
+.bg-gradient {
+  background: rgb(0,67,255);
+  background: linear-gradient(180deg, rgba(0,67,255,1) 0%, rgba(18,39,79,1) 100%);
+}
+
+.bg-rebin-hover:hover {
+  background-color: #0055FF;
+}
+
+.bg-rebin-dark-blue-hover:hover {
+  background-color: #12274F;
+}
+
+.bg-gradient-hover:hover {
+  background: rgb(0,67,255);
+  background: linear-gradient(30deg, rgba(0,67,255,1) 0%, rgba(18,39,79,1) 100%);
+}
+
+.bg-rebin-grey-hover:hover {
+  background-color: #A0AEC0;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#0043ff, #12274F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rebin-darkblue {
+  color: #12274F
+}
+
+.text-rebin-blue {
+  color:#0043ff;
+}
+
+.text-rebin-grey {
+  color: #A0AEC0;
+}
+
+.text-rebin-darkgrey {
+  color: #696F79;
+}
+
+.text-rebin-red {
+  color: #D80027;
+}
+
+.text-rebin-green {
+  color: #4FD1C5;
+}
+
+.text-rebin-blue-hover:hover {
+  color:#0043ff;
+}
+
+.text-rebin-light-blue {
+  color: #F2F5FD;
+}
+
+.border-rebin {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DEE5EC;
+}
+
+.border-rebin-blue {
+  border-color: #0043ff;
+  border-width: 3px;
+}
+
+.border-rebin-dark-blue {
+  border-color: #12274F;
+  border-width: 2px;
+}
+
+.divide-rebin {
+  border-bottom: 1px solid #DEE5EC;
+}
+
+.rebin-password {
+    font-size: 18px; 
+    letter-spacing: 4px; 
+}
+
+.icon {
+  stroke-width: 0;
+}
+
+.rdt_TableHeadRow {
+  color: #A0AEC0;
+  font-weight: 700;
+}
+
+.rdt_TableCell {
+  color: #12274F;
+  font-weight:500;
+}
+
+.items-between {
+  align-items: space-between;
+}
