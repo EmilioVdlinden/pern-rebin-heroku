@@ -11,7 +11,10 @@ const devConfig = {
 }
 
 const proConfig = {
-  connectionString: process.env.DATABASE_URL
+  connectionString: process.env.DATABASE_URL, // Heroku addons
+  ssl: {
+    rejectUnauthorized: false, 
+  }
 }
 
 

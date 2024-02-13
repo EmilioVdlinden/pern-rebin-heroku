@@ -58,13 +58,16 @@ CREATE TABLE sensor_readings(
 
 
 -- Generate customer
-INSERT INTO customers(customer_name) VALUES ('Vanheede Environmental Logistics');
+INSERT INTO customers(customer_name) VALUES ('Ateljee vzw');
 
 -- Generate bintype
-INSERT INTO bin_types(bin_type_name, bin_type_height, bin_type_width, bin_type_length) VALUES ('Peukenzuil', 61, 20, 5);
+INSERT INTO bin_types(bin_type_name, bin_type_height, bin_type_width, bin_type_length) VALUES ('kledingcontainer', 1920, 1200, 1000);
 
 -- Generate bin
-INSERT INTO bins(bin_latitude, bin_longitude, bin_adress, customer_id, bin_type_id) VALUES (50.806805, 3.119332, 'WZC Andante papier', 'f5c96aaf-6c6b-4213-9822-b2bbd98adbaa', '7f9c3283-7c29-4319-ac0c-68aa3ac2ab24');
+INSERT INTO bins(bin_latitude, bin_longitude, bin_adress, customer_id, bin_type_id) VALUES (51.0712, 3.71477, 'Ateljee vzw depot', '96a29102-7785-416e-a865-f1e6169df313', 'a6fb2dd0-c66b-441b-9fd0-13751fc3404b');
+
+-- Generate user
+INSERT INTO users(user_name, user_email, user_password, customer_id) VALUES ('Nathalie', 'nathalie.deschampheleire@ateljeevzw.be', '$2b$10$9YOvHWPjVnxjRrISH5r5D.OcT8DRwB.vBADqHVUHPARhkSs7.9UsG', '96a29102-7785-416e-a865-f1e6169df313');
 
 -- Generate sensor
 INSERT INTO sensors(sensor_credential, bin_id) VALUES ('C564D2', 'ab7fb1dd-ffa3-4489-a31c-11870d949c81');
