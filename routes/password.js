@@ -24,7 +24,7 @@ router.post("/forgot", async (req, res) => {
     const token = jwtGenerator(user.rows[0].user_id);
     
     //3. Generate link that user receives in mail
-    const link = `http://localhost:3000/password/reset/${user.rows[0].user_id}/${token}`;
+    const link = `/password/reset/${user.rows[0].user_id}/${token}`;
     console.log(link);
 
     //4. Send an email using nodemailer with the link
